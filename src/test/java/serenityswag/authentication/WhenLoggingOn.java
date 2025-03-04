@@ -45,7 +45,8 @@ public class WhenLoggingOn extends UIInteractions {
 //        $("[data-test='login-button']").click();
 
         //se reordena el codigo  y vamos a llamar a la clase de Login
-        login.asAStandardUser();
+        //login.asAStandardUser();
+        login.usingCredentials("standard_user", "secret_sauce");
 
         //lo mismo vamos a crear una parte de inventraio que es donde estamos accediendo
         //when login stadard queremos ver los productos ,ejemplo  solo el title
