@@ -1,16 +1,16 @@
 package serenityswag.authentication;
 
 import net.serenitybdd.annotations.Managed;
-import net.serenitybdd.junit.runners.SerenityRunner;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SerenityRunner.class)
-public class WhenLoggingOn {
+@ExtendWith(SerenityJUnit5Extension.class)
+public class WhenLoggingOn  {
 // Managed anotation  sirve para instanciar el webdriver
     @Managed
     WebDriver driver;
